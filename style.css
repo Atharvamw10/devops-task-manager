@@ -69,3 +69,10 @@ h1 {
     text-decoration: line-through;
     opacity: 0.6;
 }
+
+#taskList li small {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+    font-size: 12px;
+}

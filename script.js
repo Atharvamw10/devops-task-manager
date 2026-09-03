@@ -8,7 +8,15 @@ function addTask() {
     }
 
     const listItem = document.createElement("li");
-    listItem.textContent = taskText;
+
+    const taskName = document.createElement("span");
+    taskName.textContent = taskText;
+
+    const timeAdded = document.createElement("small");
+    timeAdded.textContent = "Added: " + new Date().toLocaleTimeString();
+
+    listItem.appendChild(taskName);
+    listItem.appendChild(timeAdded);
 
     listItem.onclick = function () {
         listItem.classList.toggle("completed");
